@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форма регистрации</title>
+     <link href="new2.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+     
+      <form>
+        <section class="container one">
+           <p><label style="color:red;">Имя</label>
+            <input type="text" name="user_name" pattern="^[А-Яа-яЁё\s]+$"></p>
+          
+          <p><label style="color:red;">Фамилия</label>
+            <input type="text" name="user_surname" pattern="^[А-Яа-яЁё\s]+$"></p>
+          
+          <p><label style="color:red;">Город</label>
+            <input type="text" name="city" pattern="^[А-Яа-яЁё\s]+$"></p>
+          
+           <p><label style="color:red;">Эл. почта</label>
+            <input type="email" name="email"></p>
+          
+           <p><label style="color:red;">Пароль</label>
+            <input type="password" name="password"></p>
+          
+           <p><label style="color:red;">Повторите</label>
+            <input type="password" name="password"></p>
+          
+           <p><label style="color:red;">Введите число с картинки</label><br>
+          <img src="http://www.delo-bg63.ru/assets/tpl/img/captcha.jpg" alt="captcha"> 
+            <input type="text" name="captcha" pattern="6345262">
+          </p>
+        </section>
+        
+        <section class="container two">
+        <button type="submit">Зарегистрироваться</button>
+        </section>
+      </form>
+      <p id="test">PHP</p>
+      <p class="php">Test</p>
+      <ul>
+        <li><a href="#">test</a></li>
+        <a href="#">test</a>
+        <p>&iexcl</p>
+      </ul>
+  </body>
+</html>

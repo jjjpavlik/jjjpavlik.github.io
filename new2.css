@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+  padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#test{
+ color:pink;
+
+
+}
+.php{
+  color:red;
+}
+li a{
+font-size: 40px;
+
+}
+
+html {
+	background-color: #fff;
+  font-size: 13px;
+}
+.container {
+  margin: 1% auto;
+  width: 75%;
+  border: 1px solid #E5E2E5;
+  -webkit- border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.container.one {
+  font-weight: bold;
+  padding: 3%;
+}
+span, input, label, img {
+  display: inline-block;
+}
+input {
+  margin: 1%;
+  padding: 0.8%;
+  border: 1px solid #BEBEBE;
+  width: 45%;
+}
+label, img {    
+  width: 6.5em;
+}
+.captcha label {  
+  width: 15em;
+  margin: 2.5em 0 1em 0;
+}
+.captcha img {  
+  height: 2em; 
+  vertical-align: middle;
+}
+label {
+  position: relative;
+}
+
+input ~ span::after {
+  content: ''; 
+  padding-left: 5px;
+  vertical-align: middle;
+}
+int a = int.Parse(textBox1.Text);
+            if (10 <= a && a <= 100) 
+            {
+                label1.ForeColor = Color.Red;
+            }
+            if (101 <= a && a <= 500)
+            {
+                label1.ForeColor = Color.Blue;
+            }
+            if (500 <= a && a <= 1000)
+            {
+                label1.ForeColor = Color.Green;
+            }
+
+/* Раскрашиваем input в фокусе */
+input:focus ~ span::after,
+input:focus:valid ~ span::after,
+input:focus:invalid ~ span::after {
+  content: '';
+} 
+
+/* Раскрашиваем корректные input  */
+input:valid ~ span::after {
+  content: '✓'; 
+  color: #4E9B5A;
+}
+
+/* Раскрашиваем ошибочные input */
+input:invalid ~ span::after {
+  content: '×';
+  color: #B11117;
+}
+.captcha input:invalid ~ span::after{
+  content:'× Неправильное число';
+}
+
+body {
+	background :url('http://i.imgur.com/WKR8byV.png') no-repeat;
+}
+.container.two {
+  background-color: #E5E2E5;
+  padding: 1% 0 1% 12%;
+}
+button {
+  color: #fff;
+  background-color: #029E0A;
+  -webkit- border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  border: none;
+  padding: 0.8% 3%;
+  -webkit-background: linear-gradient(#018D09, #0BE100);
+  -moz-background: linear-gradient(#018D09, #0BE100);
+  -o-background: linear-gradient(#018D09, #0BE100);
+  background: linear-gradient(#018D09, #0BE100);
+  position: relative;
+  overflow: hidden;
+}
+button::before {
+  position: absolute;
+  content: '';
+  height: 50%;
+  width: 96%;
+  left: 2%;
+  top: 0.9px;
+  -webkit-background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+  -moz-background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+  -o-background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+  -webkit- border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+}
